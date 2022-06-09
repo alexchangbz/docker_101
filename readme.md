@@ -10,6 +10,10 @@ Start up Docker ---- Run the command in terminal
 docker run --name [CONTAINER_NAME] -p [LOCAL_PORT]:[DOCKER_PORT] -d [IMAGE_NAME]
 e.g. docker run --name myapp_c2 -p 4000:4000 -d myapp
 
+Start up Docker (Automatically remove container when it's stop) ---- Run the command in terminal
+docker run --name [CONTAINER_NAME] -p [LOCAL_PORT]:[DOCKER_PORT] --rm [IMAGE_NAME]
+e.g. docker run --name myapp_c2 -p 4000:4000 --rm myapp
+
 View All Container ---- Run the command in terminal
 docker ps -a
 
