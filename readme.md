@@ -45,3 +45,9 @@ docker images rm [IMAGE_NAME] -f
 
 Delete all Images and Volumes ---- Run the command in terminal
 docker system prune -a
+
+Using Docker Compose to Run Container --- Run the command in terminal
+docker compose up
+
+Remove Images and Volumes created by Docker Compose --- Run the command in terminal
+docker compose down --rmi all -v
