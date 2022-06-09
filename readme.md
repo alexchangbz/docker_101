@@ -14,6 +14,10 @@ Start up Docker (Automatically remove container when it's stop) ---- Run the com
 docker run --name [CONTAINER_NAME] -p [LOCAL_PORT]:[DOCKER_PORT] --rm [IMAGE_NAME]
 e.g. docker run --name myapp_c2 -p 4000:4000 --rm myapp
 
+Start up Docker (Sync changes in the computer) ---- Run the command in terminal
+docker run --name [CONTAINER_NAME] -p [LOCAL_PORT]:[DOCKER_PORT] --rm -v [ABSOLUTE_PATH]:[DOCKER_WORKDIR_PATH] -v [FILE_PATH] [IMAGE_NAME]
+e.g. docker run --name myapp_c2 -p 4000:4000 --rm -v C:\Users\alexc\Documents\Development\Learning\docker\docker-crash-course\api:/app -v /app/node_modules myapp:nodemon
+
 View All Container ---- Run the command in terminal
 docker ps -a
 
